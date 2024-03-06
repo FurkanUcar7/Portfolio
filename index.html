@@ -19,7 +19,7 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#home" class="active">Ana Sayfa</a>
             <a href="#about">Hakkımda</a>
             <a href="#skills">Yeteneklerim</a>
@@ -33,7 +33,7 @@
         <div class="home-content">
             <h3>Selam, ben</h3>
             <h1>Furkan Uçar</h1>
-            <h3><span>Front-end yazılım geliştiriciyim</span></h3>
+            <h3><span class="auto-type"></span></h3>
             <p>Web deneyimlerinizi geliştirmeye odaklanıyorum. İhtiyaçlarınızı anlayıp, brbasit ve etkili çözümler sunmak için buradayım.</p>
             <div class="social-media">
                 <a href="https://www.instagram.com/ucar.furkan/"><i class="fa-brands fa-instagram"></i></a>
@@ -50,7 +50,7 @@
     <!-- HAKKIMDA ALANI -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/ProfilFotoArkasiz.png" alt="">
+            <img src="images/ProfilFotoArkasiz.jpg" alt="">
         </div>
 
         <div class="about-content">
@@ -226,6 +226,22 @@
         </div>
     </footer>
 
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Önyüz Geliştirici","Front-end Developer"],
+            typeSpeed : 80,
+            backSpeed : 80,
+            looped : true
+        })
+    </script>
+
+    <!-- MAİN JS -->
     <script src="main.js"></script>
 </body>
 </html>
