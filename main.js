@@ -54,4 +54,3 @@ ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left'});
 ScrollReveal().reveal('.home-contact p', {origin: right});
 
 
-looped

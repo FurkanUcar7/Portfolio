@@ -34,13 +34,13 @@
             <h3>Selam, ben</h3>
             <h1>Furkan Uçar</h1>
             <h3><span class="auto-type"></span></h3>
-            <p>Web deneyimlerinizi geliştirmeye odaklanıyorum. İhtiyaçlarınızı anlayıp, brbasit ve etkili çözümler sunmak için buradayım.</p>
+            <p>Web deneyimlerinizi geliştirmeye odaklanıyorum. İhtiyaçlarınızı anlayıp, basit ve etkili çözümler sunmak için buradayım.</p>
             <div class="social-media">
                 <a href="https://www.instagram.com/ucar.furkan/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/furkan-ucar/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/FurkanUcar7"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="#" class="btn">CV ulaşmak için</a>
+            <a href="#" id="downloadCV" class="btn">CV ulaşmak için</a>
         </div>
         <div class="home-img">
             <img src="images/yuvarlakFotoArkasiz.png" alt="">
@@ -239,6 +239,18 @@
             backSpeed : 80,
             looped : true
         })
+
+        document.getElementById('downloadCV').addEventListener('click', function() {
+    var driveFileID = "1G7b_pKk-LSJCEMHpcOUlgOl_qCNnOIF2"; // Google Drive'daki dosyanın ID'sini buraya yapıştırın
+    var downloadLink = "https://drive.google.com/uc?export=download&id=" + driveFileID;
+
+    var link = document.createElement('a');
+    link.href = downloadLink;
+    link.download = 'FurkanUcarCV.pdf'; // İndirilecek dosyanın adını belirtin
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
     </script>
 
     <!-- MAİN JS -->
