@@ -51,6 +51,6 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading, .skill-title, .about-content', { origin: 'top'});
 ScrollReveal().reveal('.home-img, .project-container, .project-box, .skill-box, .contact form', { origin: 'buttom'});
 ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left'});
-ScrollReveal().reveal('.home-contact p', {origin: right});
+ScrollReveal().reveal('.home-contact p', {origin: 'right'});
 
 
